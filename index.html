@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Investimentos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header><h1>Simulador de Investimentos</h1></header>
+    <main>
+        <section>
+            <h5>Rendimento<i id="ic2" class="far fa-question-circle"></i></h5>
+            <div class="bnt">
+                 <button class="buttons">Bruto</button>
+                 <div class="linha"></div>
+                 <button class="buttons">Liquido</button>
+            </div>
+           <h6>Aponte Inicial</h6>
+           <input type="number" name="aponteinicial" id="aponteinicial">
+           <h6>Prazo (em meses)</h6>
+           <input type="number" name="prazo" id="prazo">
+           <h6>IPCA (ao ano)</h6>
+           <input type="number" name="ipca" id="ipca">
+           <button id="bnt1" type="reset">Limpar campos</button>
+        </section>
+        <section>
+            <h5>Tipos de indexação<i class="far fa-question-circle"></i></h5>
+            <div class="bnt">
+                <button class="buttons">PRÉ</button>
+                <div class="linha"></div>
+                <button class="buttons">POS</button>
+                <div class="linha"></div>
+                <button class="buttons">FIXADO</button>
+            </div>
+            <h6>Aponte Mensal</h6>
+            <input type="number" name="apontemensal" id="apontemensal">
+            <h6>Rentabilidade</h6>
+            <input  type="number" name="rentabilidade" id="rentabilidade">
+            <h6>CDI (ao ano)</h6>
+            <input type="number" name="cdi" id="cdi">
+            <button id="bnt2" type="submit">Simular</button>
+
+        </section> 
+        
+    </main>
+    
+    <script src="./js.js"></script>
+    <script src="https://kit.fontawesome.com/444bc3a02a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
